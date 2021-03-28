@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<head>
+    <link href='../styles/post.css' rel='stylesheet' type='text/css'>
+    <link href='../styles/header.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+                  
+ <!-- This is the header Section -->
+       <div id="main-div-container">
+        <div class="header">
+            <button id="signUp" class="topButtons"  onclick="openSignUpButton()" value="Sign Up">Sign Up</button>
+            <button id="signIn" class="topButtons"  onclick="openSignIn()" value="Sign In">Sign in</button>
+        </div>
+        <div id="logo-container"></div>
+            <a href="../index.html" id="logo" class="logo-title">ScriBBler</a>
+            <p id="tagline">Explore, Imagine, Create</p>
+        </div>
+    </div>
+
+
+   <!-- This is for the Modal  -->
+            <div id="signInModal" class="modal">
+                    <form class="modal-content">
+                        <span onclick="onCloseModalClicked()" class="close_signIn" title="Close Modal">&times;</span>
+                        <div class="container">
+                        <h1>Welcome Back</h1>
+                        <hr>
+                        <label for="Username" class="label">
+                            <b>Username</b>
+                        </label>
+                        <input type="text" placeholder="Enter Username" name="Username" required>
+        
+                        <label for="psw" class="label">
+                            <b>Password</b>
+                        </label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <div class="clearfix" class="label">
+                            
+                            <button type="submit" class="signinbtn">Sign In</button>
+                        </div>
+                    </div>
+                    <div id="signUpPrompt" class="signUpForm">Not a member?
+                        <span id="" class="signUp" onclick="openSignUp()">Sign Up</span>
+                    </div>
+                </form>
+            </div>
+        
+            <div id="signUpModal" class="modal">
+                <div class="modal-content-sigup">
+                    <span onclick="onCloseModalClicked()" class="close" title="Close Modal">&times;</span>
+                    <form class="modal-content-sigUp">
+                        <div class="container-signUp">
+        
+                            <h1>Get Started</h1>
+                            <hr>
+                            <label for="Fullname" class="label">Full Name</label>
+                            <input type="text" placeholder="Enter Full Name" name="Fullname" required>
+                            <label for="Username" class="label">Username</label>
+                            <input type="text" placeholder="Enter Username" name="Username" required>
+                            <label for="psw" class="label">Password</label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <label for="psw-repeat" class="label">Confirm Password</label>
+                            <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+                            <div class="clearfix">
+                                    <button type="submit" class="signupbtn">Sign Up</button>
+                                <button type="button" class="cancelbtn">Clear</button>
+                            </div>
+                         </div>
+                    </form>
+                 </div>
+            </div>
+   <div class="blogContent">
+<div id="blogTitle" class="blogTite">
+    <h id="blogTitleNew">Lorem ipsum dolor sit amet.</h>
+</div>
+<div class="blogAuthor">
+        <button type="button" id="editPostClick" class="editPostButton" onclick="editPost()">Edit <i class="fa fa-edit"></i> </button>
+    <p>Lorem</p>
+</div>
+<div class="blogText">
+    <p id="blogBody">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, facilis. Provident amet vero illum molestias pariatur ipsam animi quas, vitae dolore veritatis repellendus eveniet voluptatibus numquam libero rerum dicta eos distinctio dolorum repellat. Veniam, expedita fuga. Est nemo iure molestias molestiae ducimus dolorem, incidunt aperiam aliquam illum libero maxime repellat vel? Nulla incidunt tempore ipsa eveniet repellat, suscipit velit ipsum pariatur iste mollitia. Temporibus odio iure, dicta doloribus sapiente corporis nemo optio excepturi! Dolorum, similique dignissimos deleniti sed a accusantium? Quis, sint dolore? Magni voluptatem laudantium molestias a architecto illum sapiente praesentium, perspiciatis consequatur porro fugit minus, totam aliquam eaque quas dolores esse maxime iusto, corporis tempore? Earum modi aut laudantium dolores aliquid officiis cum, cupiditate quaerat quas tenetur in, eius temporibus quis illo numquam maxime et alias. Nobis cupiditate placeat, molestiae perferendis tempore alias a dolor libero vero, officia eaque illo totam magni possimus fuga tenetur nemo dolore laboriosam quos, inventore quis pariatur! Ex eligendi voluptas doloribus harum culpa odit, adipisci impedit assumenda, illo libero distinctio cumque! Suscipit aspernatur, tenetur fugiat, earum nesciunt id illo quia modi odit alias sapiente! Ipsa est, fuga ipsum saepe possimus ratione voluptate placeat voluptates, voluptatibus quae odio error consequatur culpa reprehenderit, soluta in?   </p>
+</div>
+<div class="likeBlogButton">    
+    <button  id= "likeBlog" onclick="postLiked()">
+      <i class="fa fa-thumbs-up"> Like</i> 
+      
+    </button> 
+    <span id="commentCount">Be the first one to like this!</span>
+  </div>
+  <div class="commentContainer">      
+    <form class="commentBody"> 
+    <label for="commentContent"></label>
+                    <textarea placeholder="Leave a comment..." id="commentContent" rows="5" cols="80" name="Content"></textarea> <br>
+                    <button type="button" class="newComment" onClick="addComment()">Comment</button>
+    </form>
+    <p class="allCommentsHeading">All Comments</p> 
+    <div class="allCommentsBox" id= "commentBox"> 
+       <div class="contentOfComment">                                          
+                </div>
+            </div>
+        </div>
+        </div>
+    <script src="../scripts/post.js" defer></script>
+    <script src="../scripts/header.js">              
+    </script>
+</body>
+</html>

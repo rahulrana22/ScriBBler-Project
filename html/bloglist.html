@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='../styles/bloglist.css' rel='stylesheet' type='text/css'>    
+    <link href='../styles/header.css' rel='stylesheet' type='text/css'>
+    <!-- <link href='..\css\font.css' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- This is the header Section -->
+    <div id="main-div-container">
+        <div class="header">
+            <button id="signUp" class="topButtons"  onclick="openSignUpButton()" value="Sign Up">Sign Up</button>
+            <button id="signIn" class="topButtons"  onclick="openSignIn()" value="Sign In">Sign in</button>
+        </div>
+        <div id="logo-container"></div>
+            <a href="../index.html" id="logo" class="logo-title">ScriBBler</a>
+            <p id="tagline">Explore, Imagine, Create</p>
+        </div>
+    </div>
+           
+ <!-- This is for the Modal -->
+    <div id="signInModal" class="modal">
+        <form class="modal-content" action="/action_page.php">
+            <span onclick="onCloseModalClicked()" class="close_signIn" title="Close Modal">&times;</span>
+            <div class="container">
+                <h1>Welcome Back</h1>
+                <hr>
+                <label for="Username">
+                    <b>Username</b>
+                </label>
+                <input type="text" placeholder="Enter Username" name="Username" required>
+
+                <label for="psw">
+                    <b>Password</b>
+                </label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <div class="clearfix">
+                    <button type="submit" class="signinbtn">Sign In</button>
+                </div>
+            </div>
+            <div id="signUpPrompt" class="signUpForm">Not a member?
+                <span id="" class="signUp" onclick="openSignUp()">Sign Up</span>
+            </div>
+        </form>
+    </div>
+
+    <div id="signUpModal" class="modal">
+        <div class="modal-content-sigup">
+            <form class="modal-content-sigUp" action="/action_page.php">
+                <div class="container-signUp">
+                    <span onclick="onCloseModalClicked()" class="close" title="Close Modal">&times;</span>
+                    <h1>Get Started</h1>
+                    <hr>
+                    <label for="Fullname">
+                        <b>Full Name</b>
+                    </label>
+                    <input type="text" placeholder="Enter First Name" name="Fullname" required>
+                    <label for="Username">
+                        <b>Username</b>
+                    </label>
+                    <input type="text" placeholder="Enter Username" name="Username" required>
+                    <label for="psw">
+                        <b>Password</b>
+                    </label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <label for="psw-repeat">
+                        <b>Confirm Password</b>
+                    </label>
+                    <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+                    <div class="clearfix">
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                        <button type="button" class="cancelbtn">Clear</button>
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="allPostsContainer">
+    <div class="post">
+        <div class="post-left">
+            <p class="post-username">Lorem</p>
+        </div>
+        <div class="post-content">
+            <button onclick="onDeletePost()" class="deletePost"><i class="fa fa-trash"></i></button>
+            <p class="post-title">Hello there this is Post 1 </p>
+            <p class="post-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa reiciendis distinctio placeat laboriosam debitis aliquam, dolor, illum provident repudiandae a aspernatur magni ex id perferendis fugiat accusamus ullam fugit ut amet iste voluptatem? Blanditiis maxime mollitia deleniti? Ducimus labore ipsa quae laboriosam harum facere, voluptates minus, consectetur perferendis reiciendis inventore, molestias ipsum dicta. Eius, amet architecto sequi fugiat quaerat ab accusantium inventore laboriosam corrupti sapiente, eveniet ea, nulla maxime ad consequatur expedita exercitationem excepturi harum. Hic ex dignissimos maxime eveniet natus necessitatibus, pariatur totam repellat exercitationem reprehenderit laboriosam. Quam sequi numquam laboriosam accusamus aliquid. Porro blanditiis atque ipsam esse quis quas tempore ad ea aliquam error, dignissimos cupiditate sapiente dolore odio excepturi aut numquam perspiciatis, repellat repudiandae et repellendus unde assumenda saepe. Obcaecati, veniam ipsam. A quos similique commodi animi libero veritatis, ab consectetur pariatur harum alias odit error! Ipsum labore laboriosam sapiente nostrum nihil, eveniet quas perferendis quaerat commodi accusamus unde repudiandae ullam, consequuntur obcaecati. Quidem optio modi fuga, itaque iure rem incidunt odio dolor saepe, ab suscipit eligendi veritatis dicta nam perferendis quae iusto repudiandae aut ullam nobis quas vitae omnis veniam magnam? Corrupti tenetur quis non perspiciatis nulla sint eos deleniti, expedita necessitatibus alias laudantium dignissimos ab!</p>
+            <span class="post-more" onclick="fullPost()">...</span>
+        </div>
+    </div>
+    <div class="post">
+        <div class="post-left">
+            <p class="post-username">Lorem</p>
+        </div>
+        <div class="post-content">
+                <button onclick="onDeletePost()" class="deletePost"><i class="fa fa-trash"></i></button>
+                <p class="post-title">Hello there this is Post 2. </p>
+                <p class="post-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quasi explicabo minus eos qui ea, unde ab quos ipsum nemo veniam, repellat perspiciatis? Corrupti incidunt quos modi a? Voluptatibus velit excepturi vero delectus? Voluptatum doloremque fuga rem quam quis aliquid consectetur rerum cum porro, in cupiditate. Quo dolor perspiciatis consequatur aspernatur similique! Ullam atque, id possimus officiis, repudiandae facere cumque obcaecati, modi assumenda perferendis temporibus illum! Quaerat ullam voluptates tempore perferendis ab assumenda natus nam! Rerum iure voluptas hic. Impedit repellendus ad non, harum iste commodi asperiores sapiente aspernatur voluptates iusto ipsum unde repudiandae tenetur sunt maxime officiis magni fuga recusandae porro hic molestias eaque mollitia ea! Adipisci ex voluptates ipsum! Beatae, sint perspiciatis enim itaque laudantium iure, repellat provident fuga mollitia reiciendis eveniet corporis tenetur quaerat. Veritatis rerum commodi temporibus accusamus totam explicabo aut qui ullam id iusto expedita ipsum repudiandae placeat, ab quis ut eum aspernatur sit. Officiis sunt placeat excepturi iste dolorem officia, cumque, veniam quisquam quos eos a aspernatur laudantium nobis tempore autem modi quis dolore. Ex voluptatem quisquam unde in quaerat mollitia dicta doloribus nostrum cupiditate? Vitae, saepe. Iusto deleniti at tempora earum, sunt, quod molestias reiciendis maiores, nam consequatur veniam. Officiis itaque ratione minus. </p>
+            <span class="post-more" onclick="fullPost()">...</span>
+        </div>
+    </div>
+
+
+    <div class="post">
+        <div class="post-left">
+            <p class="post-username">Lorem</p>
+        </div>
+        <div class="post-content">
+                <button onclick="onDeletePost()" class="deletePost"><i class="fa fa-trash"></i></button>
+                <p class="post-title">Hello there this is Post 3. </p>
+                <p class="post-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, earum non est possimus natus amet voluptate unde aperiam magni iusto, tenetur aut quos accusamus eos ducimus eligendi iure ut laudantium consequatur alias dolorem, saepe facilis. Animi repudiandae perspiciatis modi ducimus excepturi, minus velit dolores officia? Eum rem excepturi dignissimos temporibus, soluta atque aut est quia quis, quidem iste obcaecati at debitis deleniti exercitationem natus, id numquam dicta eos minima mollitia rerum ex illo fugiat. Dolorem minus aliquam optio placeat, aut quasi est nulla sunt veniam molestiae quidem quo, cumque officia obcaecati voluptates ab ratione voluptatum laudantium consequuntur, quae quibusdam eveniet ipsa tenetur. Et tempore iusto, sapiente iure id itaque dolores. Porro eligendi, quas voluptate et reiciendis dolorem nesciunt distinctio natus deleniti nemo praesentium asperiores obcaecati illum voluptatum qui numquam debitis neque amet commodi architecto animi? Rem expedita beatae culpa. Similique aspernatur deserunt repudiandae perspiciatis a cupiditate facere molestias fugiat soluta commodi iure veritatis, quae, quis modi illo. Doloremque unde adipisci pariatur sint, itaque veniam, consequuntur incidunt natus tenetur porro, in blanditiis aliquam nihil rem! Voluptate veritatis ratione et omnis quos facilis officia voluptates quam, unde nihil quo rerum nobis neque laborum eius vel similique asperiores quasi corporis, provident ullam dignissimos.</p>
+            <span class="post-more" onclick="fullPost()">...</span>
+        </div>
+    </div>
+    <div class="post">
+        <div class="post-left">
+            <p class="post-username">Lorem</p>
+        </div>
+        <div class="post-content">
+                <button onclick="onDeletePost()" class="deletePost"><i class="fa fa-trash"></i></button>
+                <p class="post-title">Hello there this is Post 4. </p>
+                <p class="post-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem saepe rerum amet qui iste magnam deleniti nobis sit voluptatum. Accusamus amet reprehenderit quod sed at perspiciatis esse aut reiciendis maiores. Non odit quaerat quam minus. Dicta numquam culpa adipisci iure tempore, deserunt, distinctio voluptas exercitationem quaerat id qui nam nostrum cupiditate quisquam nemo atque assumenda repellendus dolor accusamus ea eveniet consectetur animi inventore ipsum. Possimus sapiente harum, doloremque nesciunt architecto ipsam sed vitae ullam minima recusandae quas repudiandae distinctio praesentium est illo eum nisi! Accusantium corporis perferendis eos illum numquam odit nam quisquam vero amet, consectetur veritatis. Quo optio earum voluptatibus vero eum, fugit, asperiores amet obcaecati sint dolorum nam, recusandae accusantium. Accusamus velit explicabo maxime expedita nam officia blanditiis! Eius voluptatem atque numquam non quae nostrum dicta eum animi sit deleniti ipsam odit impedit, maiores eligendi distinctio ex, alias necessitatibus ut quod exercitationem! Repellat eos laboriosam quae voluptatum at ex delectus alias. Quam animi doloremque expedita dicta deserunt hic velit ea. Culpa nemo minus reiciendis quas fuga, numquam fugit expedita quos quam harum soluta placeat unde rerum pariatur sit! Magni accusamus possimus itaque obcaecati saepe reiciendis deleniti impedit dolorum a incidunt, totam nemo officiis architecto assumenda pariatur recusandae molestiae.</p>
+            <span class="post-more" onclick="fullPost()">...</span>
+        </div>
+    </div>
+    <div class="post">
+            <div class="post-left">
+                <p class="post-username">Lorem</p>
+            </div>
+            <div class="post-content">
+                    <button onclick="onDeletePost()" class="deletePost"><i class="fa fa-trash"></i></button>
+                    <p class="post-title">Hello there this is Post 5. </p>
+                    <p class="post-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, exercitationem blanditiis. Nihil, deserunt perferendis ab in laborum doloremque tempore optio consequuntur quos exercitationem tempora vitae sit accusantium minima mollitia eligendi facere magnam nulla voluptas fugit temporibus sapiente assumenda iure? Cum amet natus, rerum distinctio dolores expedita quis ullam necessitatibus ratione cumque architecto laudantium autem error, neque officiis? Dolore ratione sequi nisi, odit autem numquam neque necessitatibus dignissimos rem tempora amet similique officia reprehenderit vitae libero minima quibusdam quo nihil aliquid laudantium consequuntur esse? Officia magnam reiciendis, nostrum eveniet nesciunt veniam dolore minima neque voluptatibus est blanditiis esse quo doloremque dolores, nobis, ab maxime nemo! Necessitatibus, iste nulla voluptate nemo reiciendis quam, quia, reprehenderit laudantium non nobis ex officia perspiciatis sed? Dicta quidem saepe quisquam eius veritatis amet porro accusantium praesentium nihil obcaecati deleniti quam, modi sint vel alias tenetur nam neque recusandae ipsam quos soluta facere perspiciatis! Consequuntur blanditiis nemo mollitia suscipit molestiae. Vel perspiciatis sit similique incidunt autem architecto ipsa itaque eius excepturi, vitae saepe aspernatur iure veniam ipsum, velit sunt recusandae. Molestiae quaerat minima nemo asperiores. Facere quisquam, laboriosam, id tempore quo assumenda dolorem consequuntur cum, impedit ipsa nam? Vitae, laborum officia? Tempora ducimus quisquam neque mollitia quidem?</p>
+                <span class="post-more" onclick="fullPost()">...</span>
+            </div>
+        </div>
+        <div id="deletePostPrompt" class="deletePrompt">
+                <form class="deleteContent" action="/action_page.php">
+                    
+                    <div>
+                        <h1 class="deleteContainer">Are you sure you want to delete this post?</h1>                                               
+                        <button type="submit" class="deleteButton">Yes</button>
+                        <button type="button" class="CancelDeleteButton" onclick="onCloseDeleteClicked()">No</button>
+                        </div>
+               </form>
+            </div>
+</div>
+    <script src="../scripts/bloglist.js">  </script>
+    <script src="../scripts/header.js">              
+    </script>
+</body>
