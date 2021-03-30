@@ -64,12 +64,8 @@ position: relative;
 display: block;
 margin: 0 !important;
 color: #fff;
-/* background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); */
 background-color: rgb(241, 140, 7);
 background-size: 2000% 2000%;
-/* -webkit-animation: Gradient 15s ease infinite;
--moz-animation: Gradient 15s ease infinite;
-animation: Gradient 15s ease infinite; */
 
 }
 .allPostsContainer {
@@ -83,41 +79,7 @@ justify-content: space-around;
 
 }
 
-/* @-webkit-keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
-}
 
-@-moz-keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
-} */
 .deletePost {
     padding-top: 5px; 
     padding-right: 5px; 

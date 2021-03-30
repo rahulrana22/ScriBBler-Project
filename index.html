@@ -23,7 +23,7 @@
     <!-- This is the header Section -->
     <div id="main-div-container">
         <div class="header">
-            <button id="signUp" class="topButtons"  onclick="openSignUpButton()" value="Sign Up">Sign Up</button>
+            <button id="signUp" class="topButtons"  onclick="forSignUpButton()" value="Sign Up">Sign Up</button>
             <button id="signIn" class="topButtons"  onclick="openSignIn()" value="Sign In">Sign in</button>
         </div>
         <div id="logo-container"></div>
@@ -40,7 +40,7 @@
 
     <div id="signInModal" class="modal">
             <form class="modal-content" action="/action_page.php">
-                <span onclick="onCloseModalClicked()" class="close_signIn" title="Close Modal">&times;</span>
+                <span onclick="forCloseModalClicked()" class="close_signIn" title="Close Modal">&times;</span>
                 <div class="container">
                 <h1>Welcome Back!</h1>
                 <hr>
@@ -66,7 +66,7 @@
 
     <div id="signUpModal" class="modal">
         <div class="modal-content-sigup">
-            <span onclick="onCloseModalClicked()" class="close_signIn" title="Close Modal">&times;</span>
+            <span onclick="forCloseModalClicked()" class="close_signIn" title="Close Modal">&times;</span>
             <form class="modal-content-sigUp" action="/action_page.php">
                 <div class="container-signUp">
 
@@ -82,7 +82,7 @@
                     <input type="password" placeholder="Confirm Password" name="pswrepeat" required>
                     <div class="clearfix">
                             <button type="submit" class="signupbtn">Sign Up</button>
-                       <!-- To add the cacell Button<button type="button" class="cancelbtn">Clear</button>-->
+                       
                         
                     </div>
                 </div>

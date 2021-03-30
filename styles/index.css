@@ -93,7 +93,7 @@ body{
      .close_newPost {
          position: absolute;
          right: 20px;
-         /* top: 10px; */
+         
          font-size: 40px;
          font-weight: bold;
          color: #000;
@@ -145,6 +145,8 @@ body{
          display: block;
          position: absolute;
      }
+
+     /*For Responsiveness*/
      @media screen and (max-width: 450px) {
          .newPostSubmit {
              width: 100%;
